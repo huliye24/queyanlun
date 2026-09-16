@@ -1,4 +1,7 @@
 # EPUB editions
 
-Validated EPUB 3 release files will be attached to GitHub Releases. This directory records edition-level notes and checksums without requiring large binary files to remain in ordinary Git history.
+Current public reflowable edition:
 
+- `queyanlun-v0.8.0-zh.epub` — Chinese EPUB 3, 16 manuscript sections
+
+The package includes a navigation document, NCX fallback, embedded metadata, a linked table of contents, and responsive typography. It has passed local ZIP and XML structural validation.

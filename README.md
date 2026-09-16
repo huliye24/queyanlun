@@ -34,7 +34,14 @@ build/         出版构建工具与说明
 
 ## 阅读与下载
 
-第一卷的中文首轮开发稿已经闭合，包含序章、十四章与结语，见[中文权威文本目录](manuscript/zh-CN/README.md)。第八章“缺口与余地”已完成第一轮出版级深度扩写；其余章节将依照同一证据标准逐步扩展。未来每个稳定版本将通过 GitHub Releases 发布，并附带：
+第一卷的中文首轮开发稿已经闭合，包含序章、十四章与结语，见[中文权威文本目录](manuscript/zh-CN/README.md)。第八章“缺口与余地”已完成第一轮出版级深度扩写；其余章节将依照同一证据标准逐步扩展。
+
+v0.8.0 中文开放阅读版已经生成，可直接下载：
+
+- [中文 EPUB](editions/epub/queyanlun-v0.8.0-zh.epub)
+- [中文阅读版 PDF](editions/pdf/queyanlun-v0.8.0-zh-reading.pdf)
+
+稳定版本同时通过 GitHub Releases 发布，并逐步附带：
 
 - 中文 EPUB
 - 中文阅读版 PDF
