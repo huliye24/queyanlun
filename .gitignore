@@ -1,0 +1,16 @@
+# Local publishing intermediates
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.log
+
+# Adobe working files and caches
+*.idlk
+*.indb
+
+# Generated local build directories
+.cache/
+dist/
+tmp/
+
