@@ -34,7 +34,7 @@ build/         出版构建工具与说明
 
 ## 阅读与下载
 
-第一卷已进入正文开发阶段，当前公开版本包含十四章的[结构地图](manuscript/zh-CN/00-book-map.md)，以及从序章到第三部“创造者”的[十二篇中文试读](manuscript/zh-CN/README.md)。未来每个稳定版本将通过 GitHub Releases 发布，并附带：
+第一卷的中文首轮开发稿已经闭合，包含序章、十四章与结语，见[中文权威文本目录](manuscript/zh-CN/README.md)。下一阶段进入全书结构编辑、论证审查、事实核验与参考文献建设。未来每个稳定版本将通过 GitHub Releases 发布，并附带：
 
 - 中文 EPUB
 - 中文阅读版 PDF
