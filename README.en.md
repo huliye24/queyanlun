@@ -4,7 +4,7 @@
 
 > Civilization is not the accumulation of answers, but the evolution of what remains absent.
 
-[中文](README.md) · [Rights](RIGHTS.md) · [Citation](CITATION.cff) · [Changelog](CHANGELOG.md)
+[中文](README.md) · [Editorial plan](EDITORIAL_PLAN.md) · [Terminology](TERMINOLOGY.md) · [Rights](RIGHTS.md) · [Citation](CITATION.cff) · [Changelog](CHANGELOG.md)
 
 ## About
 
@@ -38,4 +38,3 @@ Translations, abridgements, rearrangements, annotated editions, and other adapta
 ## Releases and citation
 
 Stable editions will be published through GitHub Releases. When citing this work, include the author, title, version, release date, and repository URL. Machine-readable citation metadata is provided in [`CITATION.cff`](CITATION.cff).
-

@@ -6,7 +6,7 @@
 > 文明不是答案的累积，而是缺口的演化。  
 > Civilization is not the accumulation of answers, but the evolution of what remains absent.
 
-[English](README.en.md) · [许可与权利](RIGHTS.md) · [引用方式](CITATION.cff) · [版本记录](CHANGELOG.md)
+[English](README.en.md) · [第一卷编辑计划](EDITORIAL_PLAN.md) · [术语基线](TERMINOLOGY.md) · [许可与权利](RIGHTS.md) · [引用方式](CITATION.cff) · [版本记录](CHANGELOG.md)
 
 ## 关于本项目
 
@@ -34,7 +34,7 @@ build/         出版构建工具与说明
 
 ## 阅读与下载
 
-当前仓库正在建立首个正式版本。未来每个稳定版本将通过 GitHub Releases 发布，并附带：
+第一卷已进入结构编辑阶段，当前公开版本包含十四章的[结构地图](manuscript/zh-CN/00-book-map.md)。未来每个稳定版本将通过 GitHub Releases 发布，并附带：
 
 - 中文 EPUB
 - 中文阅读版 PDF
@@ -55,4 +55,3 @@ build/         出版构建工具与说明
 ## 联系与授权
 
 商业出版、正式翻译、教育合作和机构收藏等事项，可通过本仓库的 Issues 联系。请勿在 Issue 中提交私人信息或未公开合同。
-

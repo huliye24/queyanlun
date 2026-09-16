@@ -8,7 +8,7 @@ authors:
 repository-code: "https://github.com/huliye24/queyanlun"
 url: "https://github.com/huliye24/queyanlun"
 license: "CC-BY-NC-ND-4.0"
-version: "0.1.0"
+version: "0.2.0"
 date-released: "2026-09-16"
 abstract: "关于缺口、创造与文明演化的开放哲学体系。An open philosophy of absence, creation, and civilizational evolution."
 keywords:
@@ -17,4 +17,3 @@ keywords:
   - theory of absence
   - creation
   - civilization
-
