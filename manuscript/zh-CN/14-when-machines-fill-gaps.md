@@ -8,7 +8,7 @@
 
 AI 以人类已经产生的数据、模型、算力和制度为基础，首先属于阳宇宙。它能够重组已有形式，帮助人表达尚未成形的意图，并在交互中显露使用者此前没有明确说出的方向。
 
-但不应简单断言 AI 只是被动工具，也不应急于把它称为与人相同的创造主体。系统能否形成自身经验、利益和责任地位，是需要哲学、科学与法律持续研究的问题。本书在此只作较窄判断：现阶段公共使用中的 AI 不应被当作责任的最终承担者。
+但不应简单断言 AI 只是被动工具，也不应急于把它称为与人相同的创造主体。系统能否形成自身经验、利益和责任地位，是需要哲学、科学与法律持续研究的问题。本书在此只作较窄判断：现阶段公共使用中的 AI 不应被当作责任的最终承担者。UNESCO 的全球 AI 伦理建议同样明确要求，AI 系统不得取代最终的人类责任与问责。[^unesco]
 
 ## 二、AI 正在回应哪些缺口
 
@@ -36,7 +36,7 @@ AI 可以快速生成候选答案，却不能自动决定什么问题值得解�
 
 第五定律在 AI 时代尤其重要。系统不应因为能够预测，就预先替人决定；不应因为能够个性化，就把人锁进过去行为构成的画像；不应因为能够陪伴，就阻止用户退出或转向真实关系。
 
-负责任的 AI 应至少保留知情、拒绝、退出、申诉和人工复核的可能。它应增加人的能力，而不是把人的判断逐步变成对系统建议的依赖。
+负责任的 AI 应至少保留知情、拒绝、退出、申诉和适当人工复核的可能。OECD 的 AI 原则要求披露人与 AI 的交互，并让受到不利影响者能够理解和挑战输出；其问责原则同时要求全生命周期的可追溯与风险管理。[^oecd-transparency][^oecd-accountability] NIST 的 AI 风险管理框架则把有效可靠、安全、透明、可解释、隐私增强和有害偏见得到管理列为可信 AI 的相关特征。[^nist]
 
 对创作者而言，这还意味着说明 AI 在作品中的作用，核查事实与权利来源，不把机器输出伪装成无需负责的匿名结果。
 
@@ -48,3 +48,9 @@ AI 同时提高答案生成和问题显现的速度。一个回应可以在数�
 
 机器可以帮助填补缺口，人仍必须决定哪些缺口值得回应、哪些空白应被保留，以及由谁承担答案进入世界以后的责任。AI 最终把本书的问题重新交还给人：当创造能力急剧扩大，我们能否同样扩大自我限制与共同判断的能力？
 
+## 本章来源
+
+[^unesco]: UNESCO, “Recommendation on the Ethics of Artificial Intelligence,” adopted 2021, https://www.unesco.org/ethics-ai/en/recommendation （访问：2026-09-16）。
+[^oecd-transparency]: OECD.AI, “Transparency and Explainability,” https://oecd.ai/en/dashboards/ai-principles/P7 （访问：2026-09-16）。
+[^oecd-accountability]: OECD.AI, “Accountability,” https://oecd.ai/en/dashboards/ai-principles/P9 （访问：2026-09-16）。
+[^nist]: National Institute of Standards and Technology, “AI Risk Management Framework,” AI RMF 1.0 released 2023, https://www.nist.gov/itl/ai-risk-management-framework （访问：2026-09-16）。

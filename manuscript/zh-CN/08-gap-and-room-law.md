@@ -54,3 +54,8 @@
 
 缺口召唤响应，余地拒绝占满。文明的成熟，不只体现为填补能力增强，也体现为知道什么必须留给他者、留给未来、留给生命自己完成。
 
+这里的拒绝与退出并非凭空设定的美德。作为最低公共基线，《世界人权宣言》保护思想、良心、宗教、意见、表达与结社自由，并明确任何人不得被迫加入某一团体。缺演论的“余地”概念比这些法律与政治权利更宽，但不能低于这一权利底线。[^udhr]
+
+## 本章来源
+
+[^udhr]: United Nations, “Universal Declaration of Human Rights,” adopted 10 December 1948, especially Articles 18–20, https://www.un.org/en/about-us/universal-declaration-of-human-rights （访问：2026-09-16）。
