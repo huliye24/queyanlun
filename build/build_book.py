@@ -31,8 +31,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = ROOT / "manuscript" / "zh-CN"
 PDF_OUT = ROOT / "editions" / "pdf" / "queyanlun-v0.8.0-zh-reading.pdf"
 EPUB_OUT = ROOT / "editions" / "epub" / "queyanlun-v0.8.0-zh.epub"
-FONT_REGULAR = Path(r"C:\Windows\Fonts\NotoSansSC-VF.ttf")
-FONT_BOLD = Path(r"C:\Windows\Fonts\Dengb.ttf")
+FONT_REGULAR = Path(r"C:\Windows\Fonts\STKAITI.TTF")
+FONT_BOLD = Path(r"C:\Windows\Fonts\simkai.ttf")
 
 BOOK_TITLE = "缺演论"
 BOOK_SUBTITLE = "缺口、创造与文明演化"
@@ -145,27 +145,26 @@ class BookDocTemplate(BaseDocTemplate):
 
 def draw_page(canvas, doc):
     canvas.saveState()
-    canvas.setFillColor(colors.HexColor("#8A8178"))
-    canvas.setFont("NotoSC", 7.5)
-    if doc.page > 2:
-        canvas.drawString(18 * mm, 10 * mm, BOOK_TITLE)
-        canvas.drawRightString(127 * mm, 10 * mm, str(doc.page - 2))
+    canvas.setFillColor(colors.HexColor("#9B9894"))
+    canvas.setFont("KaiSC", 7.2)
+    if doc.page > 3:
+        canvas.drawCentredString(72.5 * mm, 9.2 * mm, str(doc.page - 3))
     canvas.restoreState()
 
 
 def build_pdf():
     PDF_OUT.parent.mkdir(parents=True, exist_ok=True)
-    pdfmetrics.registerFont(TTFont("NotoSC", str(FONT_REGULAR)))
-    pdfmetrics.registerFont(TTFont("DengBold", str(FONT_BOLD)))
+    pdfmetrics.registerFont(TTFont("KaiSC", str(FONT_REGULAR)))
+    pdfmetrics.registerFont(TTFont("KaiSCAlt", str(FONT_BOLD)))
 
     page_size = (145 * mm, 210 * mm)
     doc = BookDocTemplate(
         str(PDF_OUT),
         pagesize=page_size,
-        leftMargin=21 * mm,
-        rightMargin=19 * mm,
-        topMargin=18 * mm,
-        bottomMargin=18 * mm,
+        leftMargin=23 * mm,
+        rightMargin=22 * mm,
+        topMargin=20 * mm,
+        bottomMargin=20 * mm,
         title=f"{BOOK_TITLE}：{BOOK_SUBTITLE}",
         author=AUTHOR,
         subject="开放哲学著作阅读版",
@@ -175,40 +174,41 @@ def build_pdf():
 
     body = ParagraphStyle(
         "Body",
-        fontName="NotoSC",
-        fontSize=9.4,
-        leading=16.2,
+        fontName="KaiSC",
+        fontSize=11.2,
+        leading=20.5,
         alignment=TA_JUSTIFY,
-        firstLineIndent=18.8,
-        spaceAfter=5,
-        textColor=colors.HexColor("#2F2C29"),
+        firstLineIndent=22.4,
+        spaceAfter=3,
+        textColor=colors.HexColor("#252321"),
         wordWrap="CJK",
     )
     chapter = ParagraphStyle(
         "ChapterTitle",
-        fontName="DengBold",
-        fontSize=20,
-        leading=28,
-        alignment=TA_LEFT,
-        spaceAfter=18,
-        textColor=colors.HexColor("#23201D"),
+        fontName="KaiSCAlt",
+        fontSize=22,
+        leading=31,
+        alignment=TA_CENTER,
+        spaceBefore=10 * mm,
+        spaceAfter=34 * mm,
+        textColor=colors.HexColor("#1E1D1B"),
         wordWrap="CJK",
     )
     section = ParagraphStyle(
         "SectionTitle",
-        fontName="DengBold",
-        fontSize=12.5,
-        leading=19,
-        spaceBefore=13,
-        spaceAfter=7,
-        textColor=colors.HexColor("#9E3B32"),
+        fontName="KaiSCAlt",
+        fontSize=14.2,
+        leading=22,
+        spaceBefore=18,
+        spaceAfter=9,
+        textColor=colors.HexColor("#242220"),
         wordWrap="CJK",
     )
     subsection = ParagraphStyle(
         "Subsection",
-        fontName="DengBold",
-        fontSize=10.3,
-        leading=16,
+        fontName="KaiSCAlt",
+        fontSize=12.2,
+        leading=19,
         spaceBefore=9,
         spaceAfter=5,
         wordWrap="CJK",
@@ -216,22 +216,22 @@ def build_pdf():
     quote = ParagraphStyle(
         "Quote",
         parent=body,
-        fontSize=9.2,
-        leading=15.8,
+        fontSize=10.5,
+        leading=19,
         leftIndent=10 * mm,
         rightIndent=5 * mm,
         firstLineIndent=0,
-        borderColor=colors.HexColor("#D3B65C"),
+        borderColor=colors.HexColor("#B9B2AA"),
         borderWidth=0,
         borderPadding=(4, 0, 4, 8),
-        textColor=colors.HexColor("#55504A"),
+        textColor=colors.HexColor("#504C47"),
     )
     bullet = ParagraphStyle("Bullet", parent=body, leftIndent=7 * mm, firstLineIndent=-4 * mm)
     footnote = ParagraphStyle(
         "Footnote",
         parent=body,
-        fontSize=7.2,
-        leading=11,
+        fontSize=8.4,
+        leading=13.5,
         firstLineIndent=0,
         textColor=colors.HexColor("#5F5A55"),
     )
@@ -239,46 +239,46 @@ def build_pdf():
     story = []
     title_style = ParagraphStyle(
         "Title",
-        fontName="DengBold",
-        fontSize=31,
-        leading=40,
+        fontName="KaiSCAlt",
+        fontSize=34,
+        leading=44,
         alignment=TA_CENTER,
         textColor=colors.HexColor("#25211E"),
     )
     subtitle_style = ParagraphStyle(
         "Subtitle",
-        fontName="NotoSC",
-        fontSize=13,
-        leading=22,
+        fontName="KaiSC",
+        fontSize=15,
+        leading=25,
         alignment=TA_CENTER,
-        textColor=colors.HexColor("#9E3B32"),
+        textColor=colors.HexColor("#55514C"),
     )
     meta_style = ParagraphStyle(
         "Meta",
-        fontName="NotoSC",
-        fontSize=9,
-        leading=17,
+        fontName="KaiSC",
+        fontSize=10,
+        leading=19,
         alignment=TA_CENTER,
         textColor=colors.HexColor("#6F6963"),
     )
     story += [
-        Spacer(1, 34 * mm),
+        Spacer(1, 40 * mm),
         Paragraph(BOOK_TITLE, title_style),
         Spacer(1, 5 * mm),
         Paragraph(BOOK_SUBTITLE, subtitle_style),
-        Spacer(1, 31 * mm),
+        Spacer(1, 36 * mm),
         Paragraph(AUTHOR, meta_style),
         Spacer(1, 5 * mm),
         Paragraph(f"开放阅读版 · v{VERSION}<br/>{LICENSE}", meta_style),
         PageBreak(),
-        Spacer(1, 18 * mm),
+        Spacer(1, 23 * mm),
         Paragraph("目录", title_style),
         Spacer(1, 10 * mm),
     ]
     toc = TableOfContents()
     toc.levelStyles = [
-        ParagraphStyle("TOC1", fontName="NotoSC", fontSize=9.5, leading=16, leftIndent=0, firstLineIndent=0),
-        ParagraphStyle("TOC2", fontName="NotoSC", fontSize=8, leading=13, leftIndent=7 * mm, firstLineIndent=0, textColor=colors.HexColor("#6F6963")),
+        ParagraphStyle("TOC1", fontName="KaiSC", fontSize=11, leading=20, leftIndent=0, firstLineIndent=0, textColor=colors.HexColor("#292724")),
+        ParagraphStyle("TOC2", fontName="KaiSC", fontSize=9.2, leading=16, leftIndent=7 * mm, firstLineIndent=0, textColor=colors.HexColor("#77716A")),
     ]
     story += [toc, PageBreak()]
 
@@ -371,17 +371,17 @@ def build_epub():
         chapters.append((f"ch{i:02d}", href, title, xhtml_doc(title, blocks_to_xhtml(blocks))))
 
     css = """
-body { font-family: serif; line-height: 1.8; color: #2f2c29; margin: 5%; }
-h1 { font-size: 1.8em; line-height: 1.35; margin: 2.5em 0 1.2em; }
-h2 { font-size: 1.25em; color: #8f352f; margin: 2em 0 .7em; }
-h3 { font-size: 1.05em; margin: 1.5em 0 .5em; }
-p { text-indent: 2em; text-align: justify; margin: .35em 0; }
-blockquote { border-left: .25em solid #d3b65c; color: #55504a; margin: 1.2em 1em; padding: .4em 1em; }
+body { font-family: "STKaiti", "KaiTi", "Kaiti SC", "楷体", serif; font-size: 1em; line-height: 1.95; color: #252321; margin: 7%; }
+h1 { font-weight: normal; text-align: center; font-size: 1.9em; line-height: 1.45; margin: 12vh 0 16vh; }
+h2 { font-weight: normal; font-size: 1.35em; color: #242220; margin: 2.2em 0 .8em; }
+h3 { font-weight: normal; font-size: 1.12em; margin: 1.7em 0 .6em; }
+p { text-indent: 2em; text-align: justify; margin: .18em 0; orphans: 2; widows: 2; }
+blockquote { border-left: .12em solid #b9b2aa; color: #504c47; margin: 1.4em 1.2em; padding: .35em 1.1em; }
 li { margin: .35em 0; }
-a { color: #8f352f; }
-.title-page { text-align: center; padding-top: 22%; }
-.title-page h1 { font-size: 2.6em; margin-bottom: .4em; }
-.subtitle { color: #8f352f; font-size: 1.25em; }
+a { color: #4c4945; }
+.title-page { text-align: center; padding-top: 20vh; }
+.title-page h1 { font-size: 2.8em; margin: 0 0 .5em; }
+.subtitle { color: #55514c; font-size: 1.25em; text-indent: 0; }
 .meta { margin-top: 5em; color: #6f6963; }
 .footnotes { border-top: 1px solid #bbb; margin-top: 2em; font-size: .82em; }
 .footnote { display: block; margin: .5em 0; }
