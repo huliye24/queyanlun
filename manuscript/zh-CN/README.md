@@ -10,5 +10,10 @@
 2. [第一章 两个世界](01-two-worlds.md)
 3. [第二章 缺口并非虚无](02-gap-not-void.md)
 4. [第三章 不对称膨胀](03-asymmetric-expansion.md)
+5. [第四章 双层结构律](04-dual-structure-law.md)
+6. [第五章 不对称膨胀律](05-asymmetric-expansion-law.md)
+7. [第六章 缺口响应律](06-gap-response-law.md)
+8. [第七章 代际跃迁律](07-generational-transition-law.md)
+9. [第八章 缺口与余地](08-gap-and-room-law.md)
 
-以上为 `v0.3.0` 开发稿，不是最终定稿。
+以上为 `v0.4.0` 开发稿，不是最终定稿。
