@@ -15,11 +15,14 @@
 - Nussbaum, Martha C. *Creating Capabilities: The Human Development Approach*. Harvard University Press, 2011. 对话主题：基本能力、人的尊严与公共责任。
 - Sen, Amartya. *Development as Freedom*. Alfred A. Knopf, 1999. 对话主题：发展作为实质自由和能力扩展。
 - United Nations. “Universal Declaration of Human Rights.” 1948. https://www.un.org/en/about-us/universal-declaration-of-human-rights
+- United Nations. *Convention on the Rights of Persons with Disabilities*. 2006, especially Articles 12 and 19. https://www.un.org/disabilities/documents/convention/convoptprot-e.pdf
+- National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research. *The Belmont Report*. 1979. U.S. Department of Health and Human Services. https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/
 
 ## 三、技术、速度与新问题
 
 - Rosa, Hartmut. *Social Acceleration: A New Theory of Modernity*. Columbia University Press, 2013. 对话主题：技术加速、社会变化与生活节奏。
 - Winner, Langdon. *The Whale and the Reactor: A Search for Limits in an Age of High Technology*. University of Chicago Press, 1986. 对话主题：技术物的政治性与技术边界。
+- U.S. Federal Trade Commission. *Bringing Dark Patterns to Light*. September 2022. https://www.ftc.gov/reports/bringing-dark-patterns-light
 
 ## 四、人工智能治理的权威基线
 
@@ -37,4 +40,3 @@ UNESCO 明确提出 AI 不应取代最终的人类责任与问责；OECD 强调�
 - 代际社会学中对流行世代标签的批评。
 - 宗教研究、科学哲学和美学对三分模型的反例。
 - 残障研究、照料伦理与“替他者完成”的批评。
-
