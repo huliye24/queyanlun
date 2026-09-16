@@ -15,5 +15,8 @@
 7. [第六章 缺口响应律](06-gap-response-law.md)
 8. [第七章 代际跃迁律](07-generational-transition-law.md)
 9. [第八章 缺口与余地](08-gap-and-room-law.md)
+10. [第九章 缺口感](09-gap-sensitivity.md)
+11. [第十章 从感知者到建造者](10-from-sensor-to-builder.md)
+12. [第十一章 满足的悖论](11-paradox-of-fulfillment.md)
 
-以上为 `v0.4.0` 开发稿，不是最终定稿。
+以上为 `v0.5.0` 开发稿，不是最终定稿。
